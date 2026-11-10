@@ -1,0 +1,58 @@
+{
+  "name": "ceadigital-mcp-tools",
+  "version": "1.0.0",
+  "description": "CEA Digital B2B Intelligence Multi-Tool CLI & Stdio MCP Server — 8 Pure-HTTP Scraping & Enrichment Engines (Skip Trace, Video Transcripts & 0-3s Hooks, eBay/Mercari Sold Comps, Building Permits, Google Maps Contacts, Bulk Email Verifier, ATS Hiring Intent, Shopify Store Leads) with Zero-Signup Free Preview Fallback.",
+  "type": "module",
+  "main": "bin/cli.mjs",
+  "bin": {
+    "ceadigital-mcp-tools": "./bin/cli.mjs",
+    "cea-b2a": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/cli.mjs",
+    "mcp": "node ./bin/cli.mjs --mcp",
+    "test": "node ./bin/cli.mjs --list"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "apify",
+    "skip-trace",
+    "youtube-transcript",
+    "tiktok-transcript",
+    "ebay-sold-listings",
+    "building-permits",
+    "google-maps-scraper",
+    "email-verifier",
+    "shopify-scraper",
+    "greenhouse-scraper",
+    "lead-generation",
+    "b2b-enrichment"
+  ],
+  "author": "CEA Digital <ops@ceadigital.io> (https://ceadigital.io)",
+  "license": "MIT",
+  "homepage": "https://ceadigital.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceadigital/ceadigital-b2a-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ceadigital/ceadigital-b2a-sdk/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "x-aliases": [
+    "ceadigital-mcp-tools",
+    "@ceadigital/b2a-mcp"
+  ]
+}

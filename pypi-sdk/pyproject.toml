@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ceadigital-b2a"
+version = "1.0.0"
+description = "CEA Digital B2B Intelligence Python SDK, CLI & Stdio MCP Server — 8 Pure-HTTP Scraping & Enrichment Engines (Skip Trace, Video Transcripts & 0-3s Hooks, eBay/Mercari Sold Comps, Building Permits, Google Maps Contacts, Bulk Email Verifier, ATS Hiring Intent, Shopify Store Leads) with Zero-Signup Free Preview Fallback."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "CEA Digital", email = "ops@ceadigital.io" }
+]
+keywords = [
+  "mcp",
+  "apify",
+  "skip-trace",
+  "youtube-transcript",
+  "tiktok-transcript",
+  "ebay-sold-listings",
+  "building-permits",
+  "google-maps-scraper",
+  "email-verifier",
+  "shopify-scraper",
+  "greenhouse-scraper",
+  "lead-generation",
+  "b2b-enrichment"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://ceadigital.io"
+Documentation = "https://ceadigital.io/tools"
+Repository = "https://github.com/ceadigital/ceadigital-b2a-sdk"
+Issues = "https://github.com/ceadigital/ceadigital-b2a-sdk/issues"
+
+[project.scripts]
+ceadigital-b2a = "ceadigital_b2a.cli:main"
+ceadigital-mcp = "ceadigital_b2a.cli:run_mcp_stdio"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ceadigital_b2a"]
